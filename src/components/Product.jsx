@@ -25,7 +25,7 @@ function Product() {
                         style={{ width: '80px', height: '2px', background: '#2c3e50' }}></div>
                 </div>
               <Apiproduct />
-                <Link style={{color:'#2c3e50'}} className="" to='Products'>ALL PRODUCTS</Link>
+                <Link style={{color:'#2c3e50'}} className="fw-bold" to='Products'>ALL PRODUCTS</Link>
 
         </div>
     </>
