@@ -1,15 +1,11 @@
-import img1 from '../imeges/img1.webp';
-import img2 from '../imeges/img2.webp';
-import img3 from '../imeges/img3.webp';
-import img4 from '../imeges/img4.webp';
-import img5 from '../imeges/img5.webp';
-import img6 from '../imeges/img6.webp';
 
-function Portfolio() {
+import { Link } from "react-router";
+import Apiproduct from "./Apiproduct";
+function Product() {
 
 
     return <>
-        <div id='Portfolio' className="container mx-auto d-flex flex-column justify-content-center align-items-center gap-4" 
+        <div id='Portfolio' className="container py-5 mx-auto d-flex flex-column justify-content-center align-items-center gap-4" 
             style={{color:'#2c3e50', minHeight:'90vh'}}>
             <h2 className="text-uppercase text-center">
                 Product
@@ -28,11 +24,10 @@ function Portfolio() {
                     <div className="divider-custom-line"
                         style={{ width: '80px', height: '2px', background: '#2c3e50' }}></div>
                 </div>
-                <div className='products d-flex flex-column justify-content-center align-items-center gap-3'>
-                    
-                </div>
+              <Apiproduct />
+                <Link style={{color:'#2c3e50'}} className="" to='Products'>ALL PRODUCTS</Link>
 
         </div>
     </>
 }
-export default Portfolio;
+export default Product;
