@@ -2,7 +2,7 @@ function Hero() {
 
 
     return <>
-        <div style={{ background: '#1abc9c',minHeight:'80vh'}} className="d-flex justify-content-center align-items-center" >
+        <div style={{ background: '#1abc9c',minHeight:'80vh'}} className="d-flex py-5 justify-content-center align-items-center" >
             <div className="container my-auto d-flex flex-column gap-4 justify-content-center align-items-center">
                 <img width={'200px'} src="avataaars.svg" />
                 <h2 className="text-light text-uppercase">Start Bootstrap</h2>

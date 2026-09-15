@@ -7,9 +7,9 @@ function Footer() {
         <div className="py-5"
             style={{ background: '#2c3e50', color: '#fff' }}>
             <div className="container mx-6">
-                <div className='row'>
-                    <div className='col text-center'>
-                        <h4>
+                <div className='row g-4 text-center'>
+                    <div className='col-12 col-md-4'>
+                        <h4 className='text-uppercase mb-3 fw-bold'>
                             Location
                         </h4>
                         <p className="small">
@@ -17,8 +17,8 @@ function Footer() {
                             Clark, MO 65243
                         </p>
                     </div>
-                    <div className="col mb-5 mb-lg-0 text-center">
-                        <h4 className="text-uppercase tetx-center mb-4">Around the Web</h4>
+                    <div className="col-12 col-md-4 text-center">
+                        <h4 className="text-uppercase text-center fw-bold mb-4">Around the Web</h4>
                         <div className='d-flex justify-content-center align-items-center gap-1'>
                             <a className='btn btn-outline-light rounded-circle d-flex justify-content-center align-items-center'
                                 style={{ width: '40px', height: '40px' }} href='#'>
@@ -38,9 +38,8 @@ function Footer() {
                             </a>
                         </div>
                     </div>
-                    <div className='col text-center'
-                    style={{width:'50%'}}>
-                        <h4>
+                    <div className='col-12 col-md-4 text-center'>
+                        <h4 className='text-uppercase text-center fw-bold mb-4'>
                             About Freelancer
                         </h4>
                         <p className='small mx-auto'

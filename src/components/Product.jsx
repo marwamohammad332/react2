@@ -8,7 +8,7 @@ function Product() {
         <div id='Portfolio' className="container py-5 mx-auto d-flex flex-column justify-content-center align-items-center gap-4" 
             style={{color:'#2c3e50', minHeight:'90vh'}}>
             <h2 className="text-uppercase text-center">
-                Product
+                Products
             </h2>
             <div className="divider-custom divider-light d-flex justify-content-center align-items-center gap-3">
                     <div className="divider-custom-line"

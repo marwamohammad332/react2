@@ -2,7 +2,7 @@ function Contact() {
 
 
     return <>
-        <div id="Contact" className="container mx-auto d-flex flex-column justify-content-center align-items-center gap-4"
+        <div id="Contact" className="container py-5 mx-auto d-flex flex-column justify-content-center align-items-center gap-4"
             style={{ color: '#2c3e50', minHeight: '100vh' }}>
             <h2>Contact</h2>
             <div className="divider-custom divider-light d-flex justify-content-center align-items-center gap-3">

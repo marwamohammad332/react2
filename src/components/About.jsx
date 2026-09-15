@@ -2,7 +2,7 @@ function About() {
 
 
     return <>
-        <div id="About" className="d-flex justify-content-center align-items-center"
+        <div id="About" className="d-flex py-5 justify-content-center align-items-center"
          style={{ background: '#1abc9c',minHeight:'80vh'}}>
             <div className="container mx-auto d-flex flex-column justify-content-center align-items-center gap-4
             text-light">
@@ -21,14 +21,18 @@ function About() {
                     <div className="divider-custom-line"
                         style={{ width: '80px', height: '2px', background: '#fff' }}></div>
                 </div>
-                <div className="row"
+                <div className="row px-4 justify-content-center"
                 style={{width:'50%'}}>
-                    <p className="col small">
+                    <div className="col-12 col-md-6 col-lg-5 ms-auto">
+                       <p className="col small">
                         Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    </p>
-                    <p className="col small">
+                    </p> 
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-5 ms-auto">
+                        <p className="col small">
                         You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
                     </p>
+                    </div>
                 </div>
                 <div className="p-2">
                      <a className="btn btn-xl btn-outline-light
