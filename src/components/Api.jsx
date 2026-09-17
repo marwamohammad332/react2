@@ -1,18 +1,32 @@
-import React, { useEffect, useState } from 'react'
+
+import React, {useEffect , useState} from 'react'
 import axios from 'axios'
 
 
 export default function Api() {
-    const [products, setProducts] = useState([]);
-    const getProducts = async () => {
-        const response = await axios.get('https://dummyjson.com/products')
-        setProducts(response.data.products);
-        console.log(response.data.products);
-    }
-    useEffect(() => {
-        getProducts();
-    }, [])
-    return <>
+    const [products , setProducts] =useState([]);
+    const [isLoader, setIsLoader] = useState(true);
+    const [error, setError] = useState('');
+    const getProducts =async ()=>{
+        try {
+            const response = await axios.get('https://dummyjson.com/products')
+            setProducts (response.data.products);
+            console.log (response.data.products)
+        }catch (e){
+            setError('error to load data');
+        }finally {
+            setIsLoader(false);
+        }
+        }
+        useEffect (()=>{
+            getProducts();
+        } , [])
+        if (isLoader)
+            return <div className=''>Loading...</div>
+        if (error)
+            return <div >{error}</div>
+
+        return <>
         <div className="container my-4">
             <div className="row g-4">
                 {products.map((product) => (
@@ -42,4 +56,4 @@ export default function Api() {
         </div>
     </>
 
-}
+    }
